@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>jquery.Cookiebar Example</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.cookieBar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('.cookie-message').cookieBar();
+			});
+		</script>
+		
+		<style type="text/css">
+			body { padding: 0; margin: 0; overflow-x: hidden; }
+			
+			.cookie-message
+			{
+				background-color: #F3F3F3;
+				position: fixed;
+				right: 0;
+				left: 0;
+				margin-bottom: 0;
+				padding: 20px;
+			}
+			
+			.cookie-message a 
+			{
+				float: right;
+			}
+		
+			.container { padding: 25px; }
+		</style>
+	</head>
+	<body>
+		<div class="cookie-message">
+			Oh hai, this site uses cookies (: like all the rest of them on the interweb.
+		</div>
+		<div class="container">
+		This is the content of the example site, its not very good text if i'm honest.
+		</div>
+	</body>
+</html>
