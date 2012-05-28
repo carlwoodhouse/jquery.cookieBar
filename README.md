@@ -36,6 +36,9 @@ Create your cookiebar markup from a simple container with an advanced button, ex
 		The government says i have to tell you i use cookies, so here it is <a class="my-close-button" href>cheers!</a>
 	</div>
 
+Full Example
+	Check out [example.html] (example.html)
+	
 ## Options
 
     closeButton: 'none'
