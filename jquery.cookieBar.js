@@ -60,7 +60,7 @@
     var settings = $.extend( {
       'closeButton' : 'none',
 	  'secure' : false,
-	  'path' : '/'
+	  'path' : '/',
 	  'domain' : ''
     }, options);
 
