@@ -58,7 +58,10 @@
 (function( $ ){
   $.fn.cookieBar = function( options ) {  
     var settings = $.extend( {
-      'closeButton' : 'none'
+      'closeButton' : 'none',
+	  'secure' : false,
+	  'path' : '/'
+	  'domain' : ''
     }, options);
 
     return this.each(function() {        
@@ -81,7 +84,7 @@
 
   		cookiebar.find(settings.closeButtonClass).click(function() {
   			cookiebar.hide();
-  			$.cookie('cookiebar', 'hide', { path: '/' });
+  			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
   			return false;
   		});
     });
