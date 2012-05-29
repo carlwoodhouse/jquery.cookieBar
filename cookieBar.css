@@ -20,10 +20,10 @@
   border-bottom:1px solid #0E83AE;
   background-color:#0990c3;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0e83ae), color-stop(50%, #0990c3), color-stop(100%, #0e9dd2));
-  background: -webkit-linear-gradient(#0e83ae, #0e83ae, #0e9dd2);
-  background: -moz-linear-gradient(#0e83ae, #0e83ae, #0e9dd2);
-  background: -o-linear-gradient(#0e83ae, #0e83ae, #0e9dd2);
-  background: -ms-linear-gradient(#0e83ae, #0e83ae, #0e9dd2);
-  background: linear-gradient(#0e83ae, #0e83ae, #0e9dd2);
+  background: -webkit-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -moz-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -o-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -ms-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: linear-gradient(#0e83ae, #0990c3, #0e9dd2);
 }
 .blue p, .blue a { color:#fff; }

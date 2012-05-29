@@ -72,9 +72,9 @@
 		// if close button not defined. define it!
 		if(settings.closeButton == 'none')
 		{
-			cookiebar.append('<a class="ui-cookiebar-close">Continue</a>');
+			cookiebar.append('<a class="cookiebar-close">Continue</a>');
 			settings = $.extend( {
-				'closeButtonClass' : '.ui-cookiebar-close'
+				'closeButtonClass' : '.cookiebar-close'
 			}, options);
 		}
 
