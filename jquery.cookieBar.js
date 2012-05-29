@@ -3,8 +3,46 @@
  * https://github.com/carlwoodhouse/jquery.cookieBar
  *
  * Copyright 2012, Carl Woodhouse
- *
- * ---------------------------------------------
+ * Disclaimer: if you still get fined for not complying with the eu cookielaw, it's not our fault.
+ */
+ 
+(function( $ ){
+  $.fn.cookieBar = function( options ) {  
+    var settings = $.extend( {
+      'closeButton' : 'none',
+	  'secure' : false,
+	  'path' : '/',
+	  'domain' : ''
+    }, options);
+
+    return this.each(function() {        
+		var cookiebar = $(this);
+		// just in case they didnt hide it by default.
+		cookiebar.hide();
+
+		// if close button not defined. define it!
+		if(settings.closeButton == 'none')
+		{
+			cookiebar.append('<a class="cookiebar-close">Continue</a>');
+			settings = $.extend( {
+				'closeButtonClass' : '.cookiebar-close'
+			}, options);
+		}
+
+		if ($.cookie('cookiebar') != 'hide') {
+      cookiebar.show();
+		}
+
+  		cookiebar.find(settings.closeButtonClass).click(function() {
+  			cookiebar.hide();
+  			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
+  			return false;
+  		});
+    });
+  };
+})( jQuery );
+
+/*!
  * Dependancy:
  * jQuery Cookie Plugin
  * https://github.com/carhartl/jquery-cookie
@@ -52,41 +90,3 @@
         return null;
     };
 })(jQuery);
-
-/* cookiebar */
- 
-(function( $ ){
-  $.fn.cookieBar = function( options ) {  
-    var settings = $.extend( {
-      'closeButton' : 'none',
-	  'secure' : false,
-	  'path' : '/',
-	  'domain' : ''
-    }, options);
-
-    return this.each(function() {        
-		var cookiebar = $(this);
-		// just in case they didnt hide it by default.
-		cookiebar.hide();
-
-		// if close button not defined. define it!
-		if(settings.closeButton == 'none')
-		{
-			cookiebar.append('<a class="cookiebar-close">Continue</a>');
-			settings = $.extend( {
-				'closeButtonClass' : '.cookiebar-close'
-			}, options);
-		}
-
-		if ($.cookie('cookiebar') != 'hide') {
-      cookiebar.show();
-		}
-
-  		cookiebar.find(settings.closeButtonClass).click(function() {
-  			cookiebar.hide();
-  			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
-  			return false;
-  		});
-    });
-  };
-})( jQuery );
