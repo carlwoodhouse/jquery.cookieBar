@@ -52,22 +52,29 @@ Full Example
 	Check out [example.html] (https://github.com/carlwoodhouse/jquery.cookieBar/blob/master/example.html)
 	
 ## Options
+**closeButton** - Define a close button for the bar
 
     closeButton: 'none'
+	
+*Default: a close button will be added automagically*
 
-Define a close button for the bar, if undefined or 'none' a close button will be added automagically
+**secure** - Define if the cookie transmission requires secure protocal (https)
 
 	secure: true
    
-If set to true transmission requires secure protocal (https), default: false.
+*Default: false*
+ 
+ **path** - Define the path the cookie is valid for
  
 	path: '/path/for/cookie'
 
-Path the cookie is valid for, default: '/' (site wide)
+*Default: '/' (site wide)*
+
+**domain** - Define the domain the cookie operates on
 
     domain: 'domain.com'
 	
-Domain the cookie operates on, default: domain cookie was created on
+*Default: domain cookie was created on*
   
 ## Authors
 
