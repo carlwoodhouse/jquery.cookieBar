@@ -37,7 +37,7 @@ Create your cookiebar markup from a simple container with an advanced button, ex
 	</div>
 
 Full Example
-	Check out [example.html] (example.html)
+	Check out [example.html] (https://github.com/carlwoodhouse/jquery.cookieBar/blob/master/example.html)
 	
 ## Options
 
@@ -52,7 +52,12 @@ If set to true transmission requires secure protocal (https), default: false.
 	path: '/path/for/cookie'
 
 Path the cookie is valid for, default: '/' (site wide)
+
+    domain: 'domain.com'
+	
+Domain the cookie operates on, default: domain cookie was created on
   
 ## Authors
 
 [Carl Woodhouse](https://github.com/carlwoodhouse)
+[Craig Hamnett](https://github.com/craighamnett)
