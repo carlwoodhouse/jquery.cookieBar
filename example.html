@@ -1,6 +1,6 @@
-<html>
+<!DOCTYPE html>
 	<head>
-		<title>jquery.Cookiebar Example</title>
+		<title>jquery.Cookiebar </title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery.cookieBar.js"></script>
 		<script type="text/javascript">
@@ -8,39 +8,38 @@
 			  $('.cookie-message').cookieBar();
 			});
 		</script>
+		<link rel="stylesheet" type="text/css" href="cookieBar.css">
 		
 		<style type="text/css">
-			body { padding: 0; margin: 0; overflow-x: hidden; }
-			
-			.cookie-message
-			{
-				background-color: #F3F3F3;
-				position: fixed;
-				right: 0;
-				left: 0;
-				margin-bottom: 0;
-				padding: 20px;
-			}
-			
-			.cookie-message a 
-			{
-				float: right;
-			}
-			
-			.container
-			{
-				clear: both;
-			}
-		
-			.container { padding: 25px; }
+    /* Unimportant styles, although you really should include a reset */
+		@import url(http://reset5.googlecode.com/hg/reset.min.css);
+		body { font:14px/21px Helvetica, Arial, serif; }
+    .container {
+			width:640px;
+			margin:60px auto;
+			padding:30px;
+			background:#ededed;
+			border-radius:10px;
+			box-shadow:1px 1px 3px #aaa;
+		}
+		h1 {
+      font-size:30px;
+      margin-bottom:15px;
+    }
+
 		</style>
 	</head>
 	<body>
-		<div class="cookie-message">
-			Oh hai, this site uses cookies (: like all the rest of them on the interweb.
-		</div>
+    <!-- This is the start of the super important snippet -->
+    <div class="ui-widget">
+  		<div class="cookie-message ui-widget-header blue">
+        <p>By using this website you allow us to place cookies on your computer. They are harmless and never personally identify you.</p>
+  		</div>
+    </div>
+    <!-- and this is the end.  -->
 		<div class="container">
-		This is the content of the example site, its not very good text if i'm honest.
+      <h1>jquery.cookieBar</h1>
+		  <p>A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!</p>
 		</div>
 	</body>
 </html>
