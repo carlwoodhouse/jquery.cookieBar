@@ -1,6 +1,6 @@
 /*!
  * jQuery Cookiebar Plugin
- * link
+ * https://github.com/carlwoodhouse/jquery.cookieBar
  *
  * Copyright 2012, Carl Woodhouse
  *
@@ -16,7 +16,6 @@
  */
 (function($) {
     $.cookie = function(key, value, options) {
-		console.log("cook call");
         // key and at least value given, set cookie...
         if (arguments.length > 1 && (!/Object/.test(Object.prototype.toString.call(value)) || value === null || value === undefined)) {
             options = $.extend({}, options);
@@ -47,7 +46,8 @@
 
         var pairs = document.cookie.split('; ');
         for (var i = 0, pair; pair = pairs[i] && pairs[i].split('='); i++) {
-            if (decode(pair[0]) === key) return decode(pair[1] || ''); // IE saves cookies with empty string as "c; ", e.g. without "=" as opposed to EOMB, thus pair[1] may be undefined
+            // IE saves cookies with empty string as "c; ", e.g. without "=" as opposed to EOMB, thus pair[1] may be undefined
+            if (decode(pair[0]) === key) return decode(pair[1] || '');
         }
         return null;
     };
@@ -63,8 +63,9 @@
 
     return this.each(function() {        
 		var cookiebar = $(this);
-		cookiebar.hide(); // just in case they didnt hide it by default.
-		
+		// just in case they didnt hide it by default.
+		cookiebar.hide();
+
 		// if close button not defined. define it!
 		if(settings.closeButton == 'none')
 		{
@@ -73,21 +74,16 @@
 				'closeButtonClass' : '.ui-cookiebar-close'
 			}, options);
 		}
-		
-		if ($.cookie('cookiebar') != 'hide')
-		{
-		console.log("showing");
+
+		if ($.cookie('cookiebar') != 'hide') {
 			cookiebar.show();
 		}
-	  
-		cookiebar.find(settings.closeButtonClass).click(function() {
-			cookiebar.hide();
-			$.cookie('cookiebar', 'hide', { path: '/' });
-			return false;
-		});
-    });
 
+  		cookiebar.find(settings.closeButtonClass).click(function() {
+  			cookiebar.hide();
+  			$.cookie('cookiebar', 'hide', { path: '/' });
+  			return false;
+  		});
+    });
   };
 })( jQuery );
- 
- 
