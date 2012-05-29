@@ -59,5 +59,5 @@ Domain the cookie operates on, default: domain cookie was created on
   
 ## Authors
 
-[Carl Woodhouse](https://github.com/carlwoodhouse)
-[Craig Hamnett](https://github.com/craighamnett)
+* [Carl Woodhouse](https://github.com/carlwoodhouse)
+* [Craig Hamnett](https://github.com/craighamnett)
