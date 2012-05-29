@@ -45,11 +45,11 @@ Full Example
 
 Define a close button for the bar, if undefined or 'none' a close button will be added automagically
 
-   secure: true
+	secure: true
    
 If set to true transmission requires secure protocal (https), default: false.
  
-  path: '/path/for/cookie'
+	path: '/path/for/cookie'
 
 Path the cookie is valid for, default: '/' (site wide)
   
