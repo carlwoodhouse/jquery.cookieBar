@@ -59,9 +59,9 @@
   $.fn.cookieBar = function( options ) {  
     var settings = $.extend( {
       'closeButton' : 'none',
-	  'secure' : false,
-	  'path' : '/'
-	  'domain' : ''
+  	  'secure' : false,
+  	  'path' : '/',
+  	  'domain' : ''
     }, options);
 
     return this.each(function() {        
@@ -72,14 +72,14 @@
 		// if close button not defined. define it!
 		if(settings.closeButton == 'none')
 		{
-			cookiebar.append('<a href class="ui-cookiebar-close">Close</a>');
+			cookiebar.append('<a class="ui-cookiebar-close">Continue</a>');
 			settings = $.extend( {
 				'closeButtonClass' : '.ui-cookiebar-close'
 			}, options);
 		}
 
 		if ($.cookie('cookiebar') != 'hide') {
-			cookiebar.show();
+      cookiebar.show();
 		}
 
   		cookiebar.find(settings.closeButtonClass).click(function() {
