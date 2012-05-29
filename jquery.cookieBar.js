@@ -8,7 +8,6 @@
  
 (function( $ ){
   $.fn.cookieBar = function( options ) {  
-	
 	var settings = $.extend( {
       'closeButton' : 'none',
 	  'secure' : false,
@@ -49,8 +48,6 @@
 	$('.cookie-message').cookieBar(options);
   };
 })( jQuery );
-
-
 
 /*!
  * Dependancy:
