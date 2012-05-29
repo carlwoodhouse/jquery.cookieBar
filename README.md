@@ -9,10 +9,22 @@ Uses: [jQuery.Cookie](https://github.com/carhartl/jquery-cookie) - bundled, no n
 Include script *after* the jQuery library
 
     <script src="/path/jquery.cookieBar.js"></script>
+	
+If you want the default styles also include the css, if not feel free to style it as you see wish!
+
+	<link rel="stylesheet" type="text/css" href="cookieBar.css">
 
 ## Usage
 
-Create your cookiebar markup from a simple container, example:
+Create a cookiebar with no markup whatsoever! it's like magic ...
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  $.cookieBar();
+		});
+	</script>
+
+Or, create your cookiebar markup from a simple container, example:
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -24,7 +36,7 @@ Create your cookiebar markup from a simple container, example:
 		The government says i have to tell you i use cookies, so here it is
     </div>
 	
-Create your cookiebar markup from a simple container with an advanced button, example:
+Or, create your cookiebar markup from a simple container with an advanced button, example:
 
 	<script type="text/javascript">
 		$(document).ready(function() {

@@ -8,15 +8,17 @@
  
 (function( $ ){
   $.fn.cookieBar = function( options ) {  
-    var settings = $.extend( {
+	
+	var settings = $.extend( {
       'closeButton' : 'none',
 	  'secure' : false,
 	  'path' : '/',
 	  'domain' : ''
     }, options);
-
-    return this.each(function() {        
+  
+    return this.each(function() {       
 		var cookiebar = $(this);
+		
 		// just in case they didnt hide it by default.
 		cookiebar.hide();
 
@@ -30,17 +32,25 @@
 		}
 
 		if ($.cookie('cookiebar') != 'hide') {
-      cookiebar.show();
+		  cookiebar.show();
 		}
 
-  		cookiebar.find(settings.closeButtonClass).click(function() {
-  			cookiebar.hide();
-  			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
-  			return false;
-  		});
+		cookiebar.find(settings.closeButtonClass).click(function() {
+			cookiebar.hide();
+			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
+			return false;
+		});
     });
   };
+  
+  // self injection init
+  $.cookieBar = function( options ) {  
+	$('body').prepend('<div class="ui-widget"><div class="cookie-message ui-widget-header blue"><p>By using this website you allow us to place cookies on your computer. They are harmless and never personally identify you.</p></div></div>');     
+	$('.cookie-message').cookieBar(options);
+  };
 })( jQuery );
+
+
 
 /*!
  * Dependancy:
