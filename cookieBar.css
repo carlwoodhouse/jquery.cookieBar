@@ -5,6 +5,7 @@
   background:#fff;
   border-bottom:1px solid #ccc;
   box-shadow:0px 0px 3px #ccc;
+  z-index: 99;
 }
 .cookie-message a {
   position:absolute;
