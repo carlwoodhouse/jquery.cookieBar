@@ -36,7 +36,7 @@
 
 		cookiebar.find(settings.closeButtonClass).click(function() {
 			cookiebar.hide();
-			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain });
+			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain, expires: 30 });
 			return false;
 		});
     });
