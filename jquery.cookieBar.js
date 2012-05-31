@@ -26,7 +26,7 @@
 		{
 			cookiebar.append('<a class="cookiebar-close">Continue</a>');
 			settings = $.extend( {
-				'closeButtonClass' : '.cookiebar-close'
+				'closeButton' : '.cookiebar-close'
 			}, options);
 		}
 
@@ -34,7 +34,7 @@
 		  cookiebar.show();
 		}
 
-		cookiebar.find(settings.closeButtonClass).click(function() {
+		cookiebar.find(settings.closeButton).click(function() {
 			cookiebar.hide();
 			$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain, expires: 30 });
 			return false;
