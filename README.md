@@ -1,6 +1,6 @@
 # jquery.cookieBar
 
-A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!
+A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw! - example available on [gh-pages] (http://carlwoodhouse.github.com/jquery.cookieBar)
 
 Uses: [jQuery.Cookie](https://github.com/carhartl/jquery-cookie) - bundled, no need to reference.
 
@@ -49,7 +49,7 @@ Or, create your cookiebar markup from a simple container with an advanced button
 	</div>
 
 Full Example
-	Check out [example.html] (https://github.com/carlwoodhouse/jquery.cookieBar/blob/master/example.html)
+	Check out example.html in the repository or visit our [github-page] (http://carlwoodhouse.github.com/jquery.cookieBar)
 	
 ## Options
 **closeButton** - Define a close button for the bar
