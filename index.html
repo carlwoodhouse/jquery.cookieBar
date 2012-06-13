@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery.cookiebar : A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.cookiebar</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/carlwoodhouse/jquery.cookieBar">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.cookiebar</h1>
+          <h2 id="project_tagline">A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/carlwoodhouse/jquery.cookieBar/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/carlwoodhouse/jquery.cookieBar/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jquery.cookieBar</h1>
+
+<p>A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!</p>
+
+<p>Uses: <a href="https://github.com/carhartl/jquery-cookie">jQuery.Cookie</a> - bundled, no need to reference.</p>
+
+<h2>Installation</h2>
+
+<p>Include script <em>after</em> the jQuery library</p>
+
+<pre><code>&lt;script src="/path/jquery.cookieBar.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>If you want the default styles also include the css, if not feel free to style it as you see wish!</p>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="cookieBar.css"&gt;
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Create a cookiebar with no markup whatsoever! it's like magic ...</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+      $.cookieBar();
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p>Or, create your cookiebar markup from a simple container, example:</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+      $('.cookie-message').cookieBar();
+    });
+&lt;/script&gt;
+
+&lt;div class="cookie-message"&gt;
+    The government says i have to tell you i use cookies, so here it is
+&lt;/div&gt;
+</code></pre>
+
+<p>Or, create your cookiebar markup from a simple container with an advanced button, example:</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+      $('.cookie-message').cookieBar({ closeButton : '.my-close-button' });
+    });
+&lt;/script&gt;
+
+&lt;div class="cookie-message"&gt;
+    The government says i have to tell you i use cookies, so here it is &lt;a class="my-close-button" href&gt;cheers!&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Full Example
+    Check out <a href="https://github.com/carlwoodhouse/jquery.cookieBar/blob/master/example.html">example.html</a></p>
+
+<h2>Options</h2>
+
+<p><strong>closeButton</strong> - Define a close button for the bar</p>
+
+<pre><code>closeButton: 'none'
+</code></pre>
+
+<p><em>Default: a close button will be added automagically</em></p>
+
+<p><strong>secure</strong> - Define if the cookie transmission requires secure protocal (https)</p>
+
+<pre><code>secure: true
+</code></pre>
+
+<p><em>Default: false</em></p>
+
+<p><strong>path</strong> - Define the path the cookie is valid for</p>
+
+<pre><code>path: '/path/for/cookie'
+</code></pre>
+
+<p><em>Default: '/' (site wide)</em></p>
+
+<p><strong>domain</strong> - Define the domain the cookie operates on</p>
+
+<pre><code>domain: 'domain.com'
+</code></pre>
+
+<p><em>Default: domain cookie was created on</em></p>
+
+<h2>Authors</h2>
+
+<ul>
+<li><a href="https://github.com/carlwoodhouse">Carl Woodhouse</a></li>
+<li><a href="https://github.com/craighamnett">Craig Hamnett</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.cookiebar maintained by <a href="https://github.com/carlwoodhouse">carlwoodhouse</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
