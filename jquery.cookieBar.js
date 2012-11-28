@@ -44,7 +44,7 @@
   
   // self injection init
   $.cookieBar = function( options ) {  
-	$('body').prepend('<div class="ui-widget"><div class="cookie-message ui-widget-header blue"><p>By using this website you allow us to place cookies on your computer. They are harmless and never personally identify you.</p></div></div>');     
+	$('body').prepend('<div class="ui-widget"><div style="display: none;" class="cookie-message ui-widget-header blue"><p>By using this website you allow us to place cookies on your computer. They are harmless and never personally identify you.</p></div></div>');     
 	$('.cookie-message').cookieBar(options);
   };
 })( jQuery );
