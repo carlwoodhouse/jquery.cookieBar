@@ -4,6 +4,7 @@
  *
  * Copyright 2012, Carl Woodhouse
  * Disclaimer: if you still get fined for not complying with the eu cookielaw, it's not our fault.
+ * Licence: MIT
  */
  
 (function( $ ){
