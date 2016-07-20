@@ -1,0 +1,28 @@
+{
+  "name": "jquery.cookieBar",
+  "main": "jquery.cookieBar.min.js",
+  "homepage": "https://github.com/carlwoodhouse/jquery.cookieBar",
+  "authors": [
+    "Carl Woodhouse",
+    "Craig Hamnett>"
+  ],
+  "description": "A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie",
+  "keywords": [
+    "cookie",
+    "bar",
+    "jquery",
+    "prompt",
+    "alert",
+    "eu",
+    "cookie",
+    "law"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
