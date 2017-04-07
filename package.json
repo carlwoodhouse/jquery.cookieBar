@@ -1,0 +1,19 @@
+{
+  "name": "jquery.cookiebar",
+  "version": "0.0.1",
+  "description": "A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!",
+  "main": "jquery.cookieBar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlwoodhouse/jquery.cookieBar.git"
+  },
+  "author": "carl woodhouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlwoodhouse/jquery.cookieBar/issues"
+  },
+  "homepage": "https://github.com/carlwoodhouse/jquery.cookieBar#readme"
+}
