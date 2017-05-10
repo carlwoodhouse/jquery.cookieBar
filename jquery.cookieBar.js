@@ -26,9 +26,7 @@
 		if(settings.closeButton == 'none')
 		{
 			cookiebar.append('<a class="cookiebar-close">Continue</a>');
-			settings = $.extend( {
-				'closeButton' : '.cookiebar-close'
-			}, options);
+			$.extend(settings, { 'closeButton' : '.cookiebar-close' });
 		}
 
 		if ($.cookie('cookiebar') != 'hide') {
