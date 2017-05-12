@@ -45,6 +45,7 @@
 	$.fn.cookieBar = function (options) {
 		var settings = $.extend({
 			'closeButton': 'none',
+			'hideOnClose': true,
 			'secure': false,
 			'path': '/',
 			'domain': ''
@@ -67,9 +68,11 @@
 			}
 
 			cookiebar.find(settings.closeButton).click(function () {
-				cookiebar.hide();
+				if (settings.hideOnClose) {
+					cookiebar.hide();
+				}
 				$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain, expires: 30 });
-				cookiebar.trigger('cbclose');
+				cookiebar.trigger('cookieBar-close');
 				return false;
 			});
 		});

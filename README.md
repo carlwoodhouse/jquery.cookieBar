@@ -48,6 +48,19 @@ Or, create your cookiebar markup from a simple container with an advanced button
 		The government says i have to tell you i use cookies, so here it is <a class="my-close-button" href>cheers!</a>
 	</div>
 
+Or, create your cookiebar markup from a simple container with a super advanced button that does something custom on close instead of just hiding, example:
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  $('.cookie-message').cookieBar({ closeButton : '.my-close-button', hideOnClose: false });
+		  $('.cookie-message').on('cookieBar-close', function() { $(this).slideUp(); });
+		});
+	</script>
+	
+    <div class="cookie-message">
+		The government says i have to tell you i use cookies, so here it is <a class="my-close-button" href>cheers!</a>
+	</div>
+
 Full Example
 	Check out example.html in the repository or visit our [github-page] (http://carlwoodhouse.github.com/jquery.cookieBar)
 	
@@ -57,6 +70,12 @@ Full Example
     closeButton: 'none'
 	
 *Default: a close button will be added automagically*
+
+**hideOnClose** - Hide the cookiebar when the close button is clicked
+
+    hideOnClose: false
+*Use-case: you might want some different behaviour on close, eg. a slide animiation. an event will be triggered on close.
+*Default: the cookiebar will be hidden on close*
 
 **secure** - Define if the cookie transmission requires secure protocal (https)
 
