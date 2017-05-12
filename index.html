@@ -1,212 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jquery.cookiebar : A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!" />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="Jquery.cookiebar : A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!"
+  />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-	
-	<!-- cookiebar includes -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.cookieBar.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.cookie-message').cookieBar();
-		});
-	</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylesheets/cookieBar.css">
-	<!-- end cookie bar includes -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/cover.css">
 
-    <title>Jquery.cookiebar</title>
-  </head>
 
-  <body>
-  
-  <!-- here be the cookiebar!!! -->
-   <div class="ui-widget">
-  		<div class="cookie-message ui-widget-header blue">
-			<p>This is an example of jQuery.cookieBar, here you'd put your message about how you use cookies.</p>
-  		</div>
+  <title>jquery.cookiebar</title>
+</head>
+
+<body>
+
+  <div class="fixed-top bg-info cookie-message pt-1">
+    <p class="mb-1">This is an example of jQuery.cookieBar, here you'd put your message about how you use cookies.
+      <a class="btn btn-sm btn-warning cbc" href="#">Accept</a>
+    </p>
+  </div>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          <h1 class="cover-heading">jquery.cookieBar</h1>
+          <p class="lead">A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by
+            cookie. Perfect for implementing the new eu cookielaw! oh and it's opensource ..</p>
+          <p class="lead">
+            <a href="https://github.com/carlwoodhouse/jquery.cookieBar" class="btn btn-lg btn-secondary">View on Github</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>By <a href="https://carlwoodhouse.com" target="_blank">Carl Woodhouse</a> &amp; Craig Hamnett
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/carlwoodhouse/jquery.cookieBar">View on GitHub</a>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <script src="jquery.cookieBar.js"></script>
+  <script>
+    $('.cookie-message').cookieBar({ closeButton: '.cbc' });
+  </script>
+</body>
 
-          <h1 id="project_title">Jquery.cookiebar</h1>
-		  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- [Bootstrap-Leaderboard] Header -->
-			<ins class="adsbygoogle"
-				 style="display:inline-block;width:728px;height:90px"
-				 data-ad-client="ca-pub-9029897445578137"
-				 data-ad-slot="2462897549"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		  </script>
-          <h2 id="project_tagline">A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/carlwoodhouse/jquery.cookieBar/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/carlwoodhouse/jquery.cookieBar/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>jquery.cookieBar</h1>
-
-<p>A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!</p>
-
-<p>Uses: <a href="https://github.com/carhartl/jquery-cookie">jQuery.Cookie</a> - bundled, no need to reference.</p>
-
-<h2>Installation</h2>
-
-<p>Include script <em>after</em> the jQuery library</p>
-
-<pre><code>&lt;script src="/path/jquery.cookieBar.js"&gt;&lt;/script&gt;
-</code></pre>
-
-<p>If you want the default styles also include the css, if not feel free to style it as you see wish!</p>
-
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="cookieBar.css"&gt;
-</code></pre>
-
-<h2>Usage</h2>
-
-<p>Create a cookiebar with no markup whatsoever! it's like magic ...</p>
-
-<pre><code>&lt;script type="text/javascript"&gt;
-    $(document).ready(function() {
-      $.cookieBar();
-    });
-&lt;/script&gt;
-</code></pre>
-
-<p>Or, create your cookiebar markup from a simple container, example:</p>
-
-<pre><code>&lt;script type="text/javascript"&gt;
-    $(document).ready(function() {
-      $('.cookie-message').cookieBar();
-    });
-&lt;/script&gt;
-
-&lt;div class="cookie-message"&gt;
-    The government says i have to tell you i use cookies, so here it is
-&lt;/div&gt;
-</code></pre>
-
-<p>Or, create your cookiebar markup from a simple container with an advanced button, example:</p>
-
-<pre><code>&lt;script type="text/javascript"&gt;
-    $(document).ready(function() {
-      $('.cookie-message').cookieBar({ closeButton : '.my-close-button' });
-    });
-&lt;/script&gt;
-
-&lt;div class="cookie-message"&gt;
-    The government says i have to tell you i use cookies, so here it is &lt;a class="my-close-button" href&gt;cheers!&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>Full Example
-    Check out <a href="https://github.com/carlwoodhouse/jquery.cookieBar/blob/master/example.html">example.html</a></p>
-
-<h2>Options</h2>
-
-<p><strong>closeButton</strong> - Define a close button for the bar</p>
-
-<pre><code>closeButton: 'none'
-</code></pre>
-
-<p><em>Default: a close button will be added automagically</em></p>
-
-<p><strong>secure</strong> - Define if the cookie transmission requires secure protocal (https)</p>
-
-<pre><code>secure: true
-</code></pre>
-
-<p><em>Default: false</em></p>
-
-<p><strong>path</strong> - Define the path the cookie is valid for</p>
-
-<pre><code>path: '/path/for/cookie'
-</code></pre>
-
-<p><em>Default: '/' (site wide)</em></p>
-
-<p><strong>domain</strong> - Define the domain the cookie operates on</p>
-
-<pre><code>domain: 'domain.com'
-</code></pre>
-
-<p><em>Default: domain cookie was created on</em></p>
-
-<h2>Authors</h2>
-
-<ul>
-<li><a href="https://github.com/carlwoodhouse">Carl Woodhouse</a></li>
-<li><a href="https://github.com/craighamnett">Craig Hamnett</a></li>
-</ul>
-<div id="contentclick7440"></div>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jquery.cookiebar maintained by <a href="https://github.com/carlwoodhouse">carlwoodhouse</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- [Bootstrap-Leaderboard] Footer -->
-			<ins class="adsbygoogle"
-				 style="display:inline-block;width:728px;height:90px"
-				 data-ad-client="ca-pub-9029897445578137"
-				 data-ad-slot="8627182348"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-      </footer>
-    </div>
-
-    <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22074952-7']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-	<script type="text/javascript">
-    (function() {
-        var data =
-        {
-            pub_id: "3103",w_id: "7440",pw: "7dcebc541d2ff4", cbust: (new Date()).getTime()
-        };
-	if (typeof widgetCheck7440 === 'undefined')   {
-        var u="";
-        for(var key in data){u+=key+"="+data[key]+"&"}
-        u=u.substring(0,u.length-1);		
-        var a = document.createElement("script");
-        a.type= 'text/javascript';
-        a.src = "https://api.contentclick.co.uk/pub_serve.php?" + u;
-        a.async = true;		
-        document.getElementById("contentclick7440").appendChild(a);
-	window.widgetCheck7440 = "set";
-	}
-    })();		
-</script>
-
-  </body>
 </html>
