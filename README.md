@@ -95,7 +95,5 @@ Full Example
 	
 *Default: domain cookie was created on*
   
-## Authors
-
-* [Carl Woodhouse](https://github.com/carlwoodhouse)
-* [Craig Hamnett](https://github.com/craighamnett)
+## Author [Carl Woodhouse](https://github.com/carlwoodhouse)
+Special thanks to [Craig Hamnett](https://github.com/craighamnett) for the original CSS.
