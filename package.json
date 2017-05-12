@@ -1,6 +1,6 @@
 {
   "name": "jquery.cookiebar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw!",
   "main": "jquery.cookieBar.js",
   "scripts": {

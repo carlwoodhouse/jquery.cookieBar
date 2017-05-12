@@ -2,8 +2,6 @@
 
 A simple, lightweight jQuery plugin for creating a notification bar that is dismissable and dismiss is saved by cookie. Perfect for implementing the new eu cookielaw! - example available on [gh-pages] (http://carlwoodhouse.github.com/jquery.cookieBar)
 
-Uses: [jQuery.Cookie](https://github.com/carhartl/jquery-cookie) - bundled, no need to reference.
-
 ## Installation
 
 Include script *after* the jQuery library
