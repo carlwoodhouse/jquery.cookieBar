@@ -77,6 +77,12 @@ Full Example
 *Use-case: you might want some different behaviour on close, eg. a slide animiation. an event will be triggered on close.
 *Default: the cookiebar will be hidden on close*
 
+**name** - Define the cookie name, useful for subdomains or versioning cookies
+
+	name: 'somecookiename'
+   
+*Default: 'cookiebar'*
+
 **secure** - Define if the cookie transmission requires secure protocal (https)
 
 	secure: true
@@ -94,6 +100,12 @@ Full Example
     domain: 'domain.com'
 	
 *Default: domain cookie was created on*
+
+**expiresDays** - Define the expiry date of the cookie in days (from time created)
+
+    expiresDays: 30
+	
+*Default: 365*
   
 ### Author: [Carl Woodhouse](https://github.com/carlwoodhouse)
 Special thanks to [Craig Hamnett](https://github.com/craighamnett) for the original CSS.

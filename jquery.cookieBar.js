@@ -48,7 +48,9 @@
 			'hideOnClose': true,
 			'secure': false,
 			'path': '/',
-			'domain': ''
+			'domain': '',
+			'name': 'cookiebar',
+			'expiresDays': 365
 		}, options);
 
 		return this.each(function () {
@@ -63,7 +65,7 @@
 				$.extend(settings, { 'closeButton': '.cookiebar-close' });
 			}
 
-			if ($.cookie('cookiebar') != 'hide') {
+			if ($.cookie(settings.name) != 'hide') {
 				cookiebar.show();
 			}
 
@@ -71,7 +73,7 @@
 				if (settings.hideOnClose) {
 					cookiebar.hide();
 				}
-				$.cookie('cookiebar', 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain, expires: 30 });
+				$.cookie(settings.name, 'hide', { path: settings.path, secure: settings.secure, domain: settings.domain, expires: settings.expiresDays });
 				cookiebar.trigger('cookieBar-close');
 				return false;
 			});
